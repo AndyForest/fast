@@ -23,7 +23,26 @@
             <next>
               <block type="movement_reverse" id="20">
                 <next>
-                  <block type="movement_left" id="10"></block>
+                  <block type="movement_left" id="10">
+                    <next>
+                      <block type="expansion_elevation" id="93" inline="true">
+                        <value name="NUMBER">
+                          <block type="math_number" id="115">
+                            <field name="NUM">333</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="controls_if" id="122" inline="false">
+                            <next>
+                              <block type="controls_whileUntil" id="129" inline="false">
+                                <field name="MODE">UNTIL</field>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
