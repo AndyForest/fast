@@ -1,8 +1,9 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="249" inline="true" x="-1" y="-5">
-    <value name="TIMES">
-      <block type="math_number" id="256">
-        <field name="NUM">10000</field>
+  <block type="controls_whileUntil" id="339" inline="false" x="-15" y="78">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="346">
+        <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO">
