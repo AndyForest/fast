@@ -40,7 +40,7 @@
                             </value>
                             <next>
                               <block type="variables_set" id="133" inline="true">
-                                <field name="VAR">item</field>
+                                <field name="VAR">paper</field>
                                 <value name="VALUE">
                                   <block type="math_number" id="147">
                                     <field name="NUM">70</field>
