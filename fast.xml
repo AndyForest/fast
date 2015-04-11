@@ -1,3 +1,18 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_left" id="10" x="116" y="174"></block>
+  <block type="robot_delay" id="32" inline="true" x="115" y="69">
+    <next>
+      <block type="movement_leftmotor" id="30" inline="true">
+        <next>
+          <block type="movement_reverse" id="20">
+            <next>
+              <block type="movement_left" id="10"></block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="sensor_light" id="39" x="157" y="166">
+    <field name="LIGHT">LEFT</field>
+  </block>
 </xml>
