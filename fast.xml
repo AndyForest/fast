@@ -1,28 +1,35 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="robot_delay" id="32" inline="true" x="115" y="69">
-    <value name="DELAY">
-      <block type="math_number" id="46">
-        <field name="NUM">1000</field>
+  <block type="led_select" id="80" inline="true" x="99" y="52">
+    <field name="ACTION">ON</field>
+    <value name="LED">
+      <block type="math_number" id="87">
+        <field name="NUM">50</field>
       </block>
     </value>
     <next>
-      <block type="movement_leftmotor" id="30" inline="true">
-        <value name="MOVLEFT">
-          <block type="math_number" id="59">
-            <field name="NUM">5000</field>
+      <block type="robot_delay" id="32" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="46">
+            <field name="NUM">1000</field>
           </block>
         </value>
         <next>
-          <block type="movement_reverse" id="20">
+          <block type="movement_leftmotor" id="30" inline="true">
+            <value name="MOVLEFT">
+              <block type="math_number" id="59">
+                <field name="NUM">5000</field>
+              </block>
+            </value>
             <next>
-              <block type="movement_left" id="10"></block>
+              <block type="movement_reverse" id="20">
+                <next>
+                  <block type="movement_left" id="10"></block>
+                </next>
+              </block>
             </next>
           </block>
         </next>
       </block>
     </next>
-  </block>
-  <block type="sensor_light" id="39" x="157" y="166">
-    <field name="LIGHT">LEFT</field>
   </block>
 </xml>
