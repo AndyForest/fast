@@ -31,15 +31,6 @@
                             <field name="NUM">333</field>
                           </block>
                         </value>
-                        <next>
-                          <block type="controls_if" id="122" inline="false">
-                            <next>
-                              <block type="controls_whileUntil" id="129" inline="false">
-                                <field name="MODE">UNTIL</field>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
                       </block>
                     </next>
                   </block>
