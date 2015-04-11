@@ -31,6 +31,25 @@
                             <field name="NUM">333</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="robot_delay" id="131" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="140">
+                                <field name="NUM">90</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="variables_set" id="133" inline="true">
+                                <field name="VAR">item</field>
+                                <value name="VALUE">
+                                  <block type="math_number" id="147">
+                                    <field name="NUM">70</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
